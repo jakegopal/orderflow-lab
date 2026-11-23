@@ -1,0 +1,15 @@
+cpu:  AMD Ryzen AI 5 340 w/ Radeon 840M
+
+== different physical cores (2,4)
+producer cpu 2, consumer cpu 4, 100000000 messages of 8 bytes per throughput run, 4096 slots
+spsc              419.7 M msg/s (min 376.3, max 479.9)   round trip p50    110  p99    160  p99.9     410 ns
+spsc-unpadded     282.6 M msg/s (min 252.5, max 294.8)   round trip p50    150  p99    260  p99.9     460 ns
+spsc-nocache      247.0 M msg/s (min 235.4, max 255.2)   round trip p50    140  p99    210  p99.9     451 ns
+mutex              14.4 M msg/s (min 14.3, max 14.5)   round trip p50    351  p99    741  p99.9    6733 ns
+
+== SMT siblings, one core (2,3)
+producer cpu 2, consumer cpu 3, 100000000 messages of 8 bytes per throughput run, 4096 slots
+spsc              484.0 M msg/s (min 471.8, max 518.2)   round trip p50    100  p99    150  p99.9     160 ns
+spsc-unpadded     270.8 M msg/s (min 241.8, max 294.5)   round trip p50    150  p99    311  p99.9     591 ns
+spsc-nocache      244.1 M msg/s (min 239.1, max 254.1)   round trip p50    150  p99    170  p99.9     471 ns
+mutex              13.8 M msg/s (min 13.0, max 14.6)   round trip p50    350  p99    591  p99.9    2234 ns

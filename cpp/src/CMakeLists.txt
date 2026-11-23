@@ -1,0 +1,8 @@
+add_executable(itch_stats itch_stats.cpp)
+target_link_libraries(itch_stats PRIVATE orderflow orderflow_warnings)
+
+add_executable(itch_replay itch_replay.cpp)
+target_link_libraries(itch_replay PRIVATE orderflow orderflow_warnings)
+
+add_executable(itch_extract itch_extract.cpp)
+target_link_libraries(itch_extract PRIVATE orderflow orderflow_warnings)

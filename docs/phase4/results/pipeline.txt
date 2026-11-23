@@ -1,0 +1,9 @@
+== whole day, end to end (11 GB file > 7.5 GB RAM: page faults included)
+single   368366634 messages in 115.55 s = 3.19 M msg/s; anomalies 0; fingerprint cbf29ce484222325
+threaded 368366634 messages in 59.67 s = 6.17 M msg/s; anomalies 0; fingerprint cbf29ce484222325
+
+== first 2048 MB, warm (each mode run twice; the second run is warm)
+single   69718789 messages in 11.24 s = 6.20 M msg/s; anomalies 0; fingerprint 4e8985cb2e4e3b48
+single   69718789 messages in 7.01 s = 9.94 M msg/s; anomalies 0; fingerprint 4e8985cb2e4e3b48
+threaded 69718789 messages in 8.72 s = 7.99 M msg/s; anomalies 0; fingerprint 4e8985cb2e4e3b48
+threaded 69718789 messages in 8.83 s = 7.90 M msg/s; anomalies 0; fingerprint 4e8985cb2e4e3b48

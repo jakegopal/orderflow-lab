@@ -1,0 +1,62 @@
+[build-system]
+# scikit-build-core runs CMakeLists.txt to compile the C++ extension
+# (orderflow._core) and packages it with the Python sources.
+requires = ["scikit-build-core>=0.10", "pybind11>=2.13"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "orderflow-lab"
+version = "0.1.0"
+description = "Order-book microstructure signal and event-driven backtester"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "pyarrow>=15.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.5",
+    "pytest>=8.0",
+    "mypy>=1.10",
+    "pandas-stubs>=2.1",
+]
+record = [
+    "websockets>=13",
+]
+# Only scripts/phase5.py uses these (the ONNX Runtime comparison).
+onnx = [
+    "onnxruntime>=1.20",
+    "skl2onnx>=1.17",
+    "onnx>=1.16",
+]
+
+[tool.scikit-build]
+minimum-version = "build-system.requires"
+wheel.packages = ["src/orderflow"]
+cmake.build-type = "Release"
+# A persistent build directory makes `pip install -e .` after a C++ change an
+# incremental rebuild instead of a full one.
+build-dir = "build/{wheel_tag}"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
+files = ["src", "tests", "scripts"]
+mypy_path = "src"
+
+[[tool.mypy.overrides]]
+module = ["sklearn.*", "onnxruntime.*", "skl2onnx.*"]
+ignore_missing_imports = true   # these ship no type information

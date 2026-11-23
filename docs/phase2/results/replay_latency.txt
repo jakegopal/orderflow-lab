@@ -1,0 +1,36 @@
+cpu: AMD Ryzen AI 5 340 w/ Radeon 840M, pinned to cpu 2
+compiler: GNU 15.2.0, flags:  -O3 -DNDEBUG
+variant map-std: 368366634 messages in 164.30 s timed = 2.2 M msg/s, 446.0 ns/msg mean (with per-message timers)
+peak anonymous memory 162 MiB (book state; the input file's pages excluded)
+timer: 1.996 TSC ticks/ns; empty timed region p50 10.0 ns (included below)
+  all                 n=  368366634  p50  270.5  p99  1823.5  p99.9   2965.7  max  4149667.1 ns
+  add                 n=  164696353  p50  180.3  p99  1372.6  p99.9   2765.3  max  4062864.3 ns
+  exec/cancel/delete  n=  171199116  p50  370.7  p99  1893.6  p99.9   3015.8  max  4149667.1 ns
+  replace             n=   27222746  p50  531.0  p99  2124.1  p99.9   8207.3  max  1309824.3 ns
+cpu: AMD Ryzen AI 5 340 w/ Radeon 840M, pinned to cpu 2
+compiler: GNU 15.2.0, flags:  -O3 -DNDEBUG
+variant map-open: 368366634 messages in 132.68 s timed = 2.8 M msg/s, 360.2 ns/msg mean (with per-message timers)
+peak anonymous memory 241 MiB (book state; the input file's pages excluded)
+timer: 1.996 TSC ticks/ns; empty timed region p50 10.0 ns (included below)
+  all                 n=  368366634  p50  220.4  p99  1432.8  p99.9   2274.4  max 10153942.3 ns
+  add                 n=  164696353  p50  200.4  p99  1182.3  p99.9   2184.2  max 10153942.3 ns
+  exec/cancel/delete  n=  171199116  p50  230.4  p99  1512.9  p99.9   2274.4  max  7136613.5 ns
+  replace             n=   27222746  p50  370.7  p99  1673.2  p99.9   2775.3  max  1380244.8 ns
+cpu: AMD Ryzen AI 5 340 w/ Radeon 840M, pinned to cpu 2
+compiler: GNU 15.2.0, flags:  -O3 -DNDEBUG
+variant flat-std: 368366634 messages in 130.91 s timed = 2.8 M msg/s, 355.4 ns/msg mean (with per-message timers)
+peak anonymous memory 710 MiB (book state; the input file's pages excluded)
+timer: 1.996 TSC ticks/ns; empty timed region p50 10.0 ns (included below)
+  all                 n=  368366634  p50  160.3  p99  1222.3  p99.9   2645.1  max 13482177.7 ns
+  add                 n=  164696353  p50  140.3  p99   901.7  p99.9   2815.4  max 13482177.7 ns
+  exec/cancel/delete  n=  171199116  p50  240.5  p99  1282.5  p99.9   2184.2  max  8089064.2 ns
+  replace             n=   27222746  p50  370.7  p99  1372.6  p99.9   3146.0  max  4142224.4 ns
+cpu: AMD Ryzen AI 5 340 w/ Radeon 840M, pinned to cpu 2
+compiler: GNU 15.2.0, flags:  -O3 -DNDEBUG
+variant flat-open: 368366634 messages in 107.76 s timed = 3.4 M msg/s, 292.5 ns/msg mean (with per-message timers)
+peak anonymous memory 790 MiB (book state; the input file's pages excluded)
+timer: 1.996 TSC ticks/ns; empty timed region p50 20.0 ns (included below)
+  all                 n=  368366634  p50  180.3  p99   911.8  p99.9   1923.7  max 116167924.4 ns
+  add                 n=  164696353  p50  190.4  p99   661.3  p99.9   1603.1  max 116167924.4 ns
+  exec/cancel/delete  n=  171199116  p50  170.3  p99  1001.9  p99.9   1863.6  max 12080544.9 ns
+  replace             n=   27222746  p50  290.6  p99  1032.0  p99.9   3266.3  max  4250428.9 ns

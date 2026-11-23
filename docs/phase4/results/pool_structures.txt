@@ -1,0 +1,26 @@
+Run on (12 X 1996.2 MHz CPU s)
+CPU Caches:
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/16384_median               6.85 ns         6.85 ns            3 IPC=0.877808 L1d/op=3.38895 dTLB/op=1.45577m items_per_second=146.015M/s miss/op=0.214667
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/65536_median               8.35 ns         8.35 ns            3 IPC=0.716265 L1d/op=3.54641 dTLB/op=1.80782m items_per_second=119.727M/s miss/op=2.40045
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/262144_median              16.7 ns         16.7 ns            3 IPC=0.356783 L1d/op=3.57207 dTLB/op=0.0259387 items_per_second=59.8608M/s miss/op=3.25874
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/1048576_median             34.3 ns         34.3 ns            3 IPC=0.175347 L1d/op=3.66634 dTLB/op=1.66304 items_per_second=29.1554M/s miss/op=3.73731
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/4194304_median             39.0 ns         39.0 ns            3 IPC=0.152991 L1d/op=3.6188 dTLB/op=2.36669 items_per_second=25.6693M/s miss/op=5.45698
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/8388608_median             40.2 ns         40.2 ns            3 IPC=0.147963 L1d/op=3.59934 dTLB/op=2.48392 items_per_second=24.8582M/s miss/op=6.72026
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/16384_median                41.8 ns         41.8 ns            3 IPC=1.41629 L1d/op=7.12103 dTLB/op=0.0199657 items_per_second=23.9453M/s miss/op=1.1637
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/65536_median                55.9 ns         55.8 ns            3 IPC=1.05427 L1d/op=7.36307 dTLB/op=0.016318 items_per_second=17.9059M/s miss/op=5.28254
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/262144_median                168 ns          168 ns            3 IPC=0.350963 L1d/op=7.37791 dTLB/op=0.16648 items_per_second=5.96923M/s miss/op=6.73593
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/1048576_median               361 ns          361 ns            3 IPC=0.163483 L1d/op=7.51366 dTLB/op=3.66401 items_per_second=2.76854M/s miss/op=8.1607
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/4194304_median               358 ns          358 ns            3 IPC=0.164601 L1d/op=7.5321 dTLB/op=3.90764 items_per_second=2.79547M/s miss/op=11.3943
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/8388608_median               363 ns          363 ns            3 IPC=0.162541 L1d/op=7.49682 dTLB/op=3.85394 items_per_second=2.75595M/s miss/op=12.7763
+BM_OrderMapLookup<PooledStdOrderMap<RestingOrder>>/16384_median         6.46 ns         6.46 ns            3 IPC=0.928362 L1d/op=3.11288 dTLB/op=1.25749m items_per_second=154.723M/s miss/op=0.036627
+BM_OrderMapLookup<PooledStdOrderMap<RestingOrder>>/65536_median         8.11 ns         8.11 ns            3 IPC=0.7374 L1d/op=3.29225 dTLB/op=2.38379m items_per_second=123.298M/s miss/op=1.96443
+BM_OrderMapLookup<PooledStdOrderMap<RestingOrder>>/262144_median        11.4 ns         11.4 ns            3 IPC=0.523334 L1d/op=3.3148 dTLB/op=8.5475m items_per_second=87.9402M/s miss/op=2.93858
+BM_OrderMapLookup<PooledStdOrderMap<RestingOrder>>/1048576_median       37.0 ns         37.0 ns            3 IPC=0.164779 L1d/op=3.42643 dTLB/op=1.48316 items_per_second=27.0388M/s miss/op=3.57228
+BM_OrderMapLookup<PooledStdOrderMap<RestingOrder>>/4194304_median       38.0 ns         38.0 ns            3 IPC=0.156507 L1d/op=3.38855 dTLB/op=2.31852 items_per_second=26.3088M/s miss/op=4.81323
+BM_OrderMapLookup<PooledStdOrderMap<RestingOrder>>/8388608_median       39.8 ns         39.8 ns            3 IPC=0.149234 L1d/op=3.37588 dTLB/op=2.46224 items_per_second=25.1385M/s miss/op=6.08721
+BM_OrderMapChurn<PooledStdOrderMap<RestingOrder>>/16384_median          31.2 ns         31.2 ns            3 IPC=1.30334 L1d/op=6.68576 dTLB/op=465.086u items_per_second=32.0946M/s miss/op=0.24508
+BM_OrderMapChurn<PooledStdOrderMap<RestingOrder>>/65536_median          41.0 ns         41.0 ns            3 IPC=0.987595 L1d/op=6.97843 dTLB/op=3.23622m items_per_second=24.3843M/s miss/op=4.594
+BM_OrderMapChurn<PooledStdOrderMap<RestingOrder>>/262144_median         89.7 ns         89.7 ns            3 IPC=0.453825 L1d/op=7.01382 dTLB/op=0.067708 items_per_second=11.144M/s miss/op=6.28582
+BM_OrderMapChurn<PooledStdOrderMap<RestingOrder>>/1048576_median         231 ns          231 ns            3 IPC=0.175512 L1d/op=7.12945 dTLB/op=3.52454 items_per_second=4.32371M/s miss/op=7.36715
+BM_OrderMapChurn<PooledStdOrderMap<RestingOrder>>/4194304_median         255 ns          255 ns            3 IPC=0.159806 L1d/op=6.88868 dTLB/op=4.00336 items_per_second=3.91786M/s miss/op=10.2837
+BM_OrderMapChurn<PooledStdOrderMap<RestingOrder>>/8388608_median         252 ns          252 ns            3 IPC=0.161898 L1d/op=6.79847 dTLB/op=3.94738 items_per_second=3.96982M/s miss/op=11.8032

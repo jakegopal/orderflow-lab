@@ -1,0 +1,53 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    # pip install -e . compiles the C++ extension (scikit-build-core), so this
+    # job also proves the bindings build on a clean machine.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+      - run: pip install -e ".[dev,record]"
+      - run: ruff check .
+      - run: mypy
+      - run: pytest
+
+  cpp:
+    # Release build with -Werror, the unit tests, and the tools and benchmarks
+    # compiling (they need recorded data to run, so they are only built here).
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: sudo apt-get update && sudo apt-get install -y ninja-build
+      - run: cmake --preset release
+      - run: cmake --build --preset release
+      - run: ctest --preset release
+
+  sanitizers:
+    # AddressSanitizer + UndefinedBehaviorSanitizer, with asserts kept on.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: sudo apt-get update && sudo apt-get install -y ninja-build
+      - run: cmake --preset asan
+      - run: cmake --build --preset asan
+      - run: ctest --preset asan
+
+  tsan:
+    # ThreadSanitizer, in its own build: it cannot share one with ASan. The
+    # SPSC tests run two threads through the ring; a missing release/acquire
+    # pair is reported as a data race even where x86 hides the bug.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: sudo apt-get update && sudo apt-get install -y ninja-build
+      - run: cmake --preset tsan
+      - run: cmake --build --preset tsan
+      - run: ctest --preset tsan

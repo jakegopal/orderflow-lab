@@ -1,0 +1,151 @@
+Running build/release/cpp/bench/bench_structures
+Run on (12 X 1996.2 MHz CPU s)
+CPU Caches:
+  L1 Data 48 KiB (x6)
+  L1 Instruction 32 KiB (x6)
+  L2 Unified 1024 KiB (x6)
+  L3 Unified 16384 KiB (x1)
+Load Average: 0.81, 0.88, 0.99
+----------------------------------------------------------------------------------------------------------------------------
+Benchmark                                                                  Time             CPU   Iterations UserCounters...
+----------------------------------------------------------------------------------------------------------------------------
+BM_PointerChase/16384_mean                                              1.05 ns         1.05 ns            3 IPC=0.59953 L1d/op=239.989u bytes=16.384k dTLB/op=379.081n miss/op=20.7791u
+BM_PointerChase/16384_median                                            1.05 ns         1.05 ns            3 IPC=0.599476 L1d/op=254.833u bytes=16.384k dTLB/op=329.636n miss/op=24.5354u
+BM_PointerChase/16384_stddev                                           0.001 ns        0.001 ns            3 IPC=103.163u L1d/op=27.6367u bytes=0 dTLB/op=97.5537n miss/op=8.15311u
+BM_PointerChase/16384_cv                                                0.06 %          0.06 %             3 IPC=0.02% L1d/op=11.52% bytes=0.00% dTLB/op=25.73% miss/op=39.24%
+BM_PointerChase/65536_mean                                              1.68 ns         1.68 ns            3 IPC=0.376255 L1d/op=0.298704 bytes=65.536k dTLB/op=3.9952u miss/op=82.7046u
+BM_PointerChase/65536_median                                            1.68 ns         1.68 ns            3 IPC=0.37584 L1d/op=0.299183 bytes=65.536k dTLB/op=3.90897u miss/op=68.325u
+BM_PointerChase/65536_stddev                                           0.011 ns        0.012 ns            3 IPC=1.54463m L1d/op=2.85576m bytes=0 dTLB/op=1.3774u miss/op=71.0389u
+BM_PointerChase/65536_cv                                                0.68 %          0.69 %             3 IPC=0.41% L1d/op=0.96% bytes=0.00% dTLB/op=34.48% miss/op=85.89%
+BM_PointerChase/262144_mean                                             2.82 ns         2.82 ns            3 IPC=0.223769 L1d/op=0.83636 bytes=262.144k dTLB/op=24.6676u miss/op=457.106u
+BM_PointerChase/262144_median                                           2.83 ns         2.83 ns            3 IPC=0.223714 L1d/op=0.836282 bytes=262.144k dTLB/op=10.3862u miss/op=519.128u
+BM_PointerChase/262144_stddev                                          0.008 ns        0.009 ns            3 IPC=313.642u L1d/op=645.077u bytes=0 dTLB/op=26.3006u miss/op=227.463u
+BM_PointerChase/262144_cv                                               0.30 %          0.31 %             3 IPC=0.14% L1d/op=0.08% bytes=0.00% dTLB/op=106.62% miss/op=49.76%
+BM_PointerChase/1048576_mean                                            5.17 ns         5.17 ns            3 IPC=0.122373 L1d/op=0.959492 bytes=1.04858M dTLB/op=187.254u miss/op=0.146045
+BM_PointerChase/1048576_median                                          5.16 ns         5.16 ns            3 IPC=0.122273 L1d/op=0.959518 bytes=1.04858M dTLB/op=258.483u miss/op=0.146636
+BM_PointerChase/1048576_stddev                                         0.042 ns        0.041 ns            3 IPC=661.706u L1d/op=75.9983u bytes=0 dTLB/op=134.815u miss/op=3.19474m
+BM_PointerChase/1048576_cv                                              0.80 %          0.79 %             3 IPC=0.54% L1d/op=0.01% bytes=0.00% dTLB/op=72.00% miss/op=2.19%
+BM_PointerChase/4194304_mean                                            11.1 ns         11.1 ns            3 IPC=0.0572963 L1d/op=0.990567 bytes=4.1943M dTLB/op=2.57826m miss/op=0.775439
+BM_PointerChase/4194304_median                                          10.7 ns         10.7 ns            3 IPC=0.0589449 L1d/op=0.990431 bytes=4.1943M dTLB/op=1.0985m miss/op=0.771732
+BM_PointerChase/4194304_stddev                                         0.755 ns        0.755 ns            3 IPC=3.34927m L1d/op=256.939u bytes=0 dTLB/op=3.34558m miss/op=7.69328m
+BM_PointerChase/4194304_cv                                              6.79 %          6.80 %             3 IPC=5.85% L1d/op=0.03% bytes=0.00% dTLB/op=129.76% miss/op=0.99%
+BM_PointerChase/16777216_mean                                           56.7 ns         56.6 ns            3 IPC=0.0111727 L1d/op=0.998724 bytes=16.7772M dTLB/op=0.0301874 miss/op=0.980549
+BM_PointerChase/16777216_median                                         56.8 ns         56.8 ns            3 IPC=0.0111326 L1d/op=0.998728 bytes=16.7772M dTLB/op=0.0303687 miss/op=0.980065
+BM_PointerChase/16777216_stddev                                         3.24 ns         3.25 ns            3 IPC=640.969u L1d/op=124.481u bytes=0 dTLB/op=0.0102743 miss/op=6.84955m
+BM_PointerChase/16777216_cv                                             5.72 %          5.73 %             3 IPC=5.74% L1d/op=0.01% bytes=0.00% dTLB/op=34.03% miss/op=0.70%
+BM_PointerChase/67108864_mean                                            124 ns          124 ns            3 IPC=5.10288m L1d/op=1.00192 bytes=67.1089M dTLB/op=0.760232 miss/op=1.25171
+BM_PointerChase/67108864_median                                          124 ns          124 ns            3 IPC=5.13319m L1d/op=1.00187 bytes=67.1089M dTLB/op=0.761209 miss/op=1.22379
+BM_PointerChase/67108864_stddev                                         4.00 ns         3.95 ns            3 IPC=166.425u L1d/op=109.858u bytes=0 dTLB/op=3.75957m miss/op=0.0688904
+BM_PointerChase/67108864_cv                                             3.22 %          3.19 %             3 IPC=3.26% L1d/op=0.01% bytes=0.00% dTLB/op=0.49% miss/op=5.50%
+BM_PointerChase/268435456_mean                                           151 ns          151 ns            3 IPC=4.20292m L1d/op=1.00391 bytes=268.435M dTLB/op=0.941232 miss/op=2.34774
+BM_PointerChase/268435456_median                                         147 ns          147 ns            3 IPC=4.29902m L1d/op=1.0036 bytes=268.435M dTLB/op=0.940228 miss/op=2.33593
+BM_PointerChase/268435456_stddev                                        6.69 ns         6.70 ns            3 IPC=179.174u L1d/op=1.571m bytes=0 dTLB/op=2.50594m miss/op=0.0307136
+BM_PointerChase/268435456_cv                                            4.44 %          4.45 %             3 IPC=4.26% L1d/op=0.16% bytes=0.00% dTLB/op=0.27% miss/op=1.31%
+BM_PointerChase/1073741824_mean                                          168 ns          168 ns            3 IPC=3.78975m L1d/op=1.00189 bytes=1.07374G dTLB/op=0.985171 miss/op=2.81579
+BM_PointerChase/1073741824_median                                        159 ns          159 ns            3 IPC=3.96854m L1d/op=1.00186 bytes=1.07374G dTLB/op=0.985026 miss/op=2.80773
+BM_PointerChase/1073741824_stddev                                       17.4 ns         17.4 ns            3 IPC=356.371u L1d/op=331.339u bytes=0 dTLB/op=509.047u miss/op=0.0341885
+BM_PointerChase/1073741824_cv                                          10.32 %         10.33 %             3 IPC=9.40% L1d/op=0.03% bytes=0.00% dTLB/op=0.05% miss/op=1.21%
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/16384_mean                 7.17 ns         6.99 ns            3 IPC=0.86393 L1d/op=3.39977 dTLB/op=1.68707m items_per_second=143.025M/s miss/op=0.270417
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/16384_median               7.21 ns         6.91 ns            3 IPC=0.873103 L1d/op=3.39705 dTLB/op=1.60034m items_per_second=144.744M/s miss/op=0.247899
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/16384_stddev              0.279 ns        0.183 ns            3 IPC=0.0181488 L1d/op=7.91177m dTLB/op=209.066u items_per_second=3.69544M/s miss/op=0.0492286
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/16384_cv                   3.90 %          2.62 %             3 IPC=2.10% L1d/op=0.23% dTLB/op=12.39% items_per_second=2.58% miss/op=18.20%
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/65536_mean                 8.88 ns         8.83 ns            3 IPC=0.690499 L1d/op=3.54399 dTLB/op=7.53055m items_per_second=113.98M/s miss/op=2.42743
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/65536_median               8.47 ns         8.47 ns            3 IPC=0.705548 L1d/op=3.54404 dTLB/op=3.39294m items_per_second=118.048M/s miss/op=2.39457
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/65536_stddev              0.957 ns        0.859 ns            3 IPC=0.0449171 L1d/op=5.27168m dTLB/op=8.93226m items_per_second=10.5773M/s miss/op=0.0721594
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/65536_cv                  10.77 %          9.73 %             3 IPC=6.51% L1d/op=0.15% dTLB/op=118.61% items_per_second=9.28% miss/op=2.97%
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/262144_mean                16.8 ns         16.8 ns            3 IPC=0.358025 L1d/op=3.57839 dTLB/op=0.0315752 items_per_second=59.8527M/s miss/op=3.26951
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/262144_median              16.7 ns         16.7 ns            3 IPC=0.358878 L1d/op=3.57871 dTLB/op=0.0329593 items_per_second=59.9274M/s miss/op=3.26416
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/262144_stddev              1.00 ns         1.06 ns            3 IPC=0.0218664 L1d/op=9.87926m dTLB/op=5.32179m items_per_second=3.75751M/s miss/op=0.0118269
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/262144_cv                  5.97 %          6.30 %             3 IPC=6.11% L1d/op=0.28% dTLB/op=16.85% items_per_second=6.28% miss/op=0.36%
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/1048576_mean               35.1 ns         35.1 ns            3 IPC=0.171583 L1d/op=3.66984 dTLB/op=1.65792 items_per_second=28.5088M/s miss/op=4.75019
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/1048576_median             35.2 ns         35.2 ns            3 IPC=0.171294 L1d/op=3.67022 dTLB/op=1.65788 items_per_second=28.4245M/s miss/op=4.74918
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/1048576_stddev            0.363 ns        0.323 ns            3 IPC=1.33035m L1d/op=834.377u dTLB/op=952.312u items_per_second=263.794k/s miss/op=9.43218m
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/1048576_cv                 1.03 %          0.92 %             3 IPC=0.78% L1d/op=0.02% dTLB/op=0.06% items_per_second=0.93% miss/op=0.20%
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/4194304_mean               40.2 ns         40.2 ns            3 IPC=0.149036 L1d/op=3.62785 dTLB/op=2.36971 items_per_second=24.905M/s miss/op=6.38167
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/4194304_median             39.4 ns         39.3 ns            3 IPC=0.151542 L1d/op=3.62738 dTLB/op=2.36839 items_per_second=25.4617M/s miss/op=6.36259
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/4194304_stddev             1.56 ns         1.59 ns            3 IPC=4.67938m L1d/op=1.50246m dTLB/op=3.1606m items_per_second=965.279k/s miss/op=0.0333451
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/4194304_cv                 3.87 %          3.96 %             3 IPC=3.14% L1d/op=0.04% dTLB/op=0.13% items_per_second=3.88% miss/op=0.52%
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/8388608_mean               41.9 ns         41.9 ns            3 IPC=0.142291 L1d/op=3.59933 dTLB/op=2.48471 items_per_second=23.8814M/s miss/op=7.28638
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/8388608_median             41.6 ns         41.6 ns            3 IPC=0.143143 L1d/op=3.60081 dTLB/op=2.48488 items_per_second=24.0671M/s miss/op=7.28197
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/8388608_stddev            0.675 ns        0.672 ns            3 IPC=1.83953m L1d/op=3.1412m dTLB/op=1.44584m items_per_second=379.818k/s miss/op=0.0115811
+BM_OrderMapLookup<StdOrderMap<RestingOrder>>/8388608_cv                 1.61 %          1.60 %             3 IPC=1.29% L1d/op=0.09% dTLB/op=0.06% items_per_second=1.59% miss/op=0.16%
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/16384_mean           2.11 ns         2.11 ns            3 IPC=1.65675 L1d/op=1.12743 dTLB/op=452.399u items_per_second=474.944M/s miss/op=0.0253639
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/16384_median         2.11 ns         2.11 ns            3 IPC=1.65212 L1d/op=1.12743 dTLB/op=451.26u items_per_second=473.332M/s miss/op=0.025686
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/16384_stddev        0.024 ns        0.024 ns            3 IPC=0.0175163 L1d/op=427.471u dTLB/op=266.911u items_per_second=5.50456M/s miss/op=3.37018m
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/16384_cv             1.15 %          1.15 %             3 IPC=1.06% L1d/op=0.04% dTLB/op=59.00% items_per_second=1.16% miss/op=13.29%
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/65536_mean           2.45 ns         2.45 ns            3 IPC=1.43186 L1d/op=1.19892 dTLB/op=1.41237m items_per_second=408.597M/s miss/op=0.665407
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/65536_median         2.45 ns         2.45 ns            3 IPC=1.43084 L1d/op=1.19892 dTLB/op=1.52541m items_per_second=408.765M/s miss/op=0.665519
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/65536_stddev        0.008 ns        0.008 ns            3 IPC=2.29208m L1d/op=44.7728u dTLB/op=803.198u items_per_second=1.32546M/s miss/op=1.37304m
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/65536_cv             0.32 %          0.32 %             3 IPC=0.16% L1d/op=0.00% dTLB/op=56.87% items_per_second=0.32% miss/op=0.21%
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/262144_mean          4.29 ns         4.29 ns            3 IPC=0.832124 L1d/op=1.21371 dTLB/op=5.79958m items_per_second=237.001M/s miss/op=0.98481
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/262144_median        3.98 ns         3.98 ns            3 IPC=0.878603 L1d/op=1.21307 dTLB/op=4.33493m items_per_second=251.326M/s miss/op=0.982779
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/262144_stddev       0.713 ns        0.713 ns            3 IPC=0.118887 L1d/op=1.42782m dTLB/op=2.56953m items_per_second=36.2504M/s miss/op=4.4607m
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/262144_cv           16.61 %         16.61 %             3 IPC=14.29% L1d/op=0.12% dTLB/op=44.31% items_per_second=15.30% miss/op=0.45%
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/1048576_mean         11.8 ns         11.8 ns            3 IPC=0.299528 L1d/op=1.24437 dTLB/op=0.688343 items_per_second=84.9837M/s miss/op=1.56336
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/1048576_median       11.7 ns         11.7 ns            3 IPC=0.29949 L1d/op=1.24407 dTLB/op=0.678615 items_per_second=85.2834M/s miss/op=1.55483
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/1048576_stddev      0.085 ns        0.084 ns            3 IPC=502.739u L1d/op=1.02822m dTLB/op=0.0176048 items_per_second=601.579k/s miss/op=0.0167515
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/1048576_cv           0.72 %          0.71 %             3 IPC=0.17% L1d/op=0.08% dTLB/op=2.56% items_per_second=0.71% miss/op=1.07%
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/4194304_mean         11.9 ns         11.9 ns            3 IPC=0.292548 L1d/op=1.24163 dTLB/op=0.929463 items_per_second=83.9954M/s miss/op=2.14017
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/4194304_median       11.9 ns         11.9 ns            3 IPC=0.292365 L1d/op=1.24153 dTLB/op=0.929778 items_per_second=83.9635M/s miss/op=2.1405
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/4194304_stddev      0.058 ns        0.056 ns            3 IPC=1.46316m L1d/op=381.625u dTLB/op=659.366u items_per_second=397.195k/s miss/op=676.88u
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/4194304_cv           0.49 %          0.47 %             3 IPC=0.50% L1d/op=0.03% dTLB/op=0.07% items_per_second=0.47% miss/op=0.03%
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/8388608_mean         12.7 ns         12.7 ns            3 IPC=0.276593 L1d/op=1.23879 dTLB/op=0.973931 items_per_second=78.8844M/s miss/op=2.57406
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/8388608_median       12.7 ns         12.7 ns            3 IPC=0.276219 L1d/op=1.23887 dTLB/op=0.973898 items_per_second=78.8052M/s miss/op=2.57266
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/8388608_stddev      0.105 ns        0.104 ns            3 IPC=1.4711m L1d/op=150.547u dTLB/op=434.085u items_per_second=646.16k/s miss/op=3.97273m
+BM_OrderMapLookup<OpenAddressingMap<RestingOrder>>/8388608_cv           0.83 %          0.82 %             3 IPC=0.53% L1d/op=0.01% dTLB/op=0.04% items_per_second=0.82% miss/op=0.15%
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/16384_mean                  40.1 ns         40.1 ns            3 IPC=1.47191 L1d/op=7.11325 dTLB/op=5.2469m items_per_second=24.9613M/s miss/op=0.86395
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/16384_median                39.9 ns         39.8 ns            3 IPC=1.47415 L1d/op=7.11265 dTLB/op=5.86879m items_per_second=25.0943M/s miss/op=0.850584
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/16384_stddev               0.635 ns        0.638 ns            3 IPC=0.0171291 L1d/op=8.25371m dTLB/op=1.24054m items_per_second=394.517k/s miss/op=0.0713843
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/16384_cv                    1.58 %          1.59 %             3 IPC=1.16% L1d/op=0.12% dTLB/op=23.64% items_per_second=1.58% miss/op=8.26%
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/65536_mean                  53.6 ns         53.6 ns            3 IPC=1.09629 L1d/op=7.35359 dTLB/op=0.0273074 items_per_second=18.6597M/s miss/op=5.24899
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/65536_median                53.2 ns         53.2 ns            3 IPC=1.10311 L1d/op=7.35349 dTLB/op=0.0175962 items_per_second=18.7966M/s miss/op=5.2502
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/65536_stddev               0.777 ns        0.772 ns            3 IPC=0.0149053 L1d/op=743.376u dTLB/op=0.0309518 items_per_second=266.678k/s miss/op=8.75809m
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/65536_cv                    1.45 %          1.44 %             3 IPC=1.36% L1d/op=0.01% dTLB/op=113.35% items_per_second=1.43% miss/op=0.17%
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/262144_mean                  182 ns          182 ns            3 IPC=0.324126 L1d/op=7.38937 dTLB/op=0.271832 items_per_second=5.49806M/s miss/op=6.84922
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/262144_median                188 ns          188 ns            3 IPC=0.314468 L1d/op=7.39044 dTLB/op=0.26942 items_per_second=5.33215M/s miss/op=6.85116
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/262144_stddev               10.5 ns         10.5 ns            3 IPC=0.0192745 L1d/op=1.90595m dTLB/op=0.0259716 items_per_second=327.264k/s miss/op=0.026814
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/262144_cv                   5.74 %          5.76 %             3 IPC=5.95% L1d/op=0.03% dTLB/op=9.55% items_per_second=5.95% miss/op=0.39%
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/1048576_mean                 365 ns          365 ns            3 IPC=0.161806 L1d/op=7.55668 dTLB/op=3.65868 items_per_second=2.74372M/s miss/op=10.3456
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/1048576_median               360 ns          360 ns            3 IPC=0.163815 L1d/op=7.55778 dTLB/op=3.65838 items_per_second=2.77977M/s miss/op=10.2979
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/1048576_stddev              22.3 ns         22.4 ns            3 IPC=9.66438m L1d/op=6.90676m dTLB/op=0.0237287 items_per_second=164.518k/s miss/op=0.089644
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/1048576_cv                  6.12 %          6.12 %             3 IPC=5.97% L1d/op=0.09% dTLB/op=0.65% items_per_second=6.00% miss/op=0.87%
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/4194304_mean                 376 ns          375 ns            3 IPC=0.157283 L1d/op=7.56128 dTLB/op=3.87426 items_per_second=2.66462M/s miss/op=12.5336
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/4194304_median               377 ns          377 ns            3 IPC=0.156648 L1d/op=7.56263 dTLB/op=3.87242 items_per_second=2.65449M/s miss/op=12.5376
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/4194304_stddev              3.88 ns         2.97 ns            3 IPC=1.42925m L1d/op=3.25233m dTLB/op=6.56076m items_per_second=21.1907k/s miss/op=0.0100027
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/4194304_cv                  1.03 %          0.79 %             3 IPC=0.91% L1d/op=0.04% dTLB/op=0.17% items_per_second=0.80% miss/op=0.08%
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/8388608_mean                 428 ns          428 ns            3 IPC=0.138974 L1d/op=7.53766 dTLB/op=3.8176 items_per_second=2.34674M/s miss/op=13.5679
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/8388608_median               442 ns          442 ns            3 IPC=0.134291 L1d/op=7.53792 dTLB/op=3.81886 items_per_second=2.26096M/s miss/op=13.5583
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/8388608_stddev              31.6 ns         31.6 ns            3 IPC=0.0104247 L1d/op=4.75125m dTLB/op=4.119m items_per_second=180.972k/s miss/op=0.0297114
+BM_OrderMapChurn<StdOrderMap<RestingOrder>>/8388608_cv                  7.38 %          7.40 %             3 IPC=7.50% L1d/op=0.06% dTLB/op=0.11% items_per_second=7.71% miss/op=0.22%
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/16384_mean            24.4 ns         24.4 ns            3 IPC=1.20805 L1d/op=6.17965 dTLB/op=2.17608m items_per_second=40.9895M/s miss/op=0.606693
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/16384_median          24.4 ns         24.3 ns            3 IPC=1.20958 L1d/op=6.17948 dTLB/op=894.203u items_per_second=41.072M/s miss/op=0.585023
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/16384_stddev         0.144 ns        0.146 ns            3 IPC=3.06086m L1d/op=1.52688m dTLB/op=2.51278m items_per_second=244.074k/s miss/op=0.0446943
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/16384_cv              0.59 %          0.60 %             3 IPC=0.25% L1d/op=0.02% dTLB/op=115.47% items_per_second=0.60% miss/op=7.37%
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/65536_mean            28.5 ns         28.5 ns            3 IPC=1.03487 L1d/op=6.55373 dTLB/op=0.0183081 items_per_second=35.0979M/s miss/op=4.68409
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/65536_median          28.5 ns         28.5 ns            3 IPC=1.0353 L1d/op=6.55285 dTLB/op=0.0132552 items_per_second=35.1021M/s miss/op=4.67824
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/65536_stddev         0.098 ns        0.097 ns            3 IPC=1.53929m L1d/op=2.77045m dTLB/op=9.70428m items_per_second=119.482k/s miss/op=0.0151213
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/65536_cv              0.34 %          0.34 %             3 IPC=0.15% L1d/op=0.04% dTLB/op=53.01% items_per_second=0.34% miss/op=0.32%
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/262144_mean           54.9 ns         54.9 ns            3 IPC=0.537826 L1d/op=6.40936 dTLB/op=0.169872 items_per_second=18.2148M/s miss/op=5.85861
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/262144_median         55.5 ns         55.5 ns            3 IPC=0.531272 L1d/op=6.35981 dTLB/op=0.105304 items_per_second=18.019M/s miss/op=5.75586
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/262144_stddev         1.48 ns         1.48 ns            3 IPC=0.0147512 L1d/op=0.0925413 dTLB/op=0.118109 items_per_second=496.536k/s miss/op=0.200364
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/262144_cv             2.69 %          2.69 %             3 IPC=2.74% L1d/op=1.44% dTLB/op=69.53% items_per_second=2.73% miss/op=3.42%
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/1048576_mean           109 ns          109 ns            3 IPC=0.274352 L1d/op=7.35022 dTLB/op=2.22001 items_per_second=9.22779M/s miss/op=8.92186
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/1048576_median         109 ns          109 ns            3 IPC=0.272005 L1d/op=7.34508 dTLB/op=2.21622 items_per_second=9.1441M/s miss/op=8.87242
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/1048576_stddev        5.95 ns         5.94 ns            3 IPC=0.0141076 L1d/op=0.0209095 dTLB/op=0.0300054 items_per_second=511.168k/s miss/op=0.177523
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/1048576_cv            5.48 %          5.47 %             3 IPC=5.14% L1d/op=0.28% dTLB/op=1.35% items_per_second=5.54% miss/op=1.99%
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/4194304_mean           124 ns          124 ns            3 IPC=0.245166 L1d/op=8.17223 dTLB/op=2.97056 items_per_second=8.09197M/s miss/op=11.7725
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/4194304_median         124 ns          124 ns            3 IPC=0.245325 L1d/op=8.17139 dTLB/op=2.97101 items_per_second=8.05413M/s miss/op=11.7666
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/4194304_stddev        1.28 ns         1.26 ns            3 IPC=1.5239m L1d/op=8.73138m dTLB/op=1.84663m items_per_second=82.8077k/s miss/op=0.0114446
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/4194304_cv            1.04 %          1.02 %             3 IPC=0.62% L1d/op=0.11% dTLB/op=0.06% items_per_second=1.02% miss/op=0.10%
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/8388608_mean           135 ns          135 ns            3 IPC=0.225341 L1d/op=8.46761 dTLB/op=3.07742 items_per_second=7.40366M/s miss/op=13.1989
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/8388608_median         135 ns          135 ns            3 IPC=0.22591 L1d/op=8.47115 dTLB/op=3.07747 items_per_second=7.41807M/s miss/op=13.1969
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/8388608_stddev        1.20 ns         1.21 ns            3 IPC=2.33398m L1d/op=7.6581m dTLB/op=203.217u items_per_second=66.0352k/s miss/op=4.2398m
+BM_OrderMapChurn<OpenAddressingMap<RestingOrder>>/8388608_cv            0.89 %          0.89 %             3 IPC=1.04% L1d/op=0.09% dTLB/op=0.01% items_per_second=0.89% miss/op=0.03%
+BM_LevelsNearBest<MapLevels<Side::buy>>_mean                            35.0 ns         35.0 ns            3 IPC=2.08684 L1d/op=4.24441m dTLB/op=28.891u items_per_second=28.5804M/s miss/op=796.832u
+BM_LevelsNearBest<MapLevels<Side::buy>>_median                          35.0 ns         35.0 ns            3 IPC=2.08915 L1d/op=4.1314m dTLB/op=24.9361u items_per_second=28.611M/s miss/op=598.315u
+BM_LevelsNearBest<MapLevels<Side::buy>>_stddev                         0.135 ns        0.137 ns            3 IPC=4.19596m L1d/op=315.502u dTLB/op=13.2696u items_per_second=111.524k/s miss/op=426.606u
+BM_LevelsNearBest<MapLevels<Side::buy>>_cv                              0.39 %          0.39 %             3 IPC=0.20% L1d/op=7.43% dTLB/op=45.93% items_per_second=0.39% miss/op=53.54%
+BM_LevelsNearBest<FlatLevels<Side::buy, 2048>>_mean                     20.3 ns         20.3 ns            3 IPC=3.04262 L1d/op=1.91023m dTLB/op=10.7011u items_per_second=49.2596M/s miss/op=523.033u
+BM_LevelsNearBest<FlatLevels<Side::buy, 2048>>_median                   20.2 ns         20.2 ns            3 IPC=3.04752 L1d/op=1.6968m dTLB/op=6.89159u items_per_second=49.3876M/s miss/op=326.259u
+BM_LevelsNearBest<FlatLevels<Side::buy, 2048>>_stddev                  0.216 ns        0.196 ns            3 IPC=0.0235739 L1d/op=743.723u dTLB/op=7.87446u items_per_second=474.668k/s miss/op=506.025u
+BM_LevelsNearBest<FlatLevels<Side::buy, 2048>>_cv                       1.07 %          0.97 %             3 IPC=0.77% L1d/op=38.93% dTLB/op=73.59% items_per_second=0.96% miss/op=96.75%

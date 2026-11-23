@@ -1,0 +1,10 @@
+kernel: 6.6.87.2-microsoft-standard-WSL2
+CPU(s):                               12
+Model name:                           AMD Ryzen AI 5 340 w/ Radeon 840M
+L1d cache:                            288 KiB (6 instances)
+L2 cache:                             6 MiB (6 instances)
+L3 cache:                             16 MiB (1 instance)
+memory: 7507 MiB
+compiler: c++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+pinned to cpu: 2 (taskset)
+perf_event_paranoid: 2

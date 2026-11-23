@@ -1,0 +1,24 @@
+cpu: AMD Ryzen AI 5 340 w/ Radeon 840M, pinned to cpu 2
+compiler: GNU 15.2.0, flags:  -O3 -DNDEBUG
+variant flat-std: 368366634 messages in 75.16 s timed = 4.9 M msg/s, 204.0 ns/msg mean
+peak anonymous memory 710 MiB (book state; the input file's pages excluded)
+hardware counters over the timed regions (user space):
+  cycles               899.456 per message  (counted 100% of the time)
+  instructions         321.136 per message  (counted 100% of the time)
+  L1d-load-misses        5.825 per message  (counted 100% of the time)
+  dTLB-load-misses       1.831 per message  (counted 100% of the time)
+  cache-misses           6.241 per message  (counted 100% of the time)
+  branch-misses          1.988 per message  (counted 100% of the time)
+  IPC (instructions per cycle) 0.36
+cpu: AMD Ryzen AI 5 340 w/ Radeon 840M, pinned to cpu 2
+compiler: GNU 15.2.0, flags:  -O3 -DNDEBUG
+variant flat-pool: 368366634 messages in 69.96 s timed = 5.3 M msg/s, 189.9 ns/msg mean
+peak anonymous memory 684 MiB (book state; the input file's pages excluded)
+hardware counters over the timed regions (user space):
+  cycles               802.766 per message  (counted 100% of the time)
+  instructions         265.230 per message  (counted 100% of the time)
+  L1d-load-misses        5.370 per message  (counted 100% of the time)
+  dTLB-load-misses       1.587 per message  (counted 100% of the time)
+  cache-misses           5.760 per message  (counted 100% of the time)
+  branch-misses          1.863 per message  (counted 100% of the time)
+  IPC (instructions per cycle) 0.33
