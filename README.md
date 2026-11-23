@@ -21,7 +21,7 @@ NASDAQ ITCH 5.0 ─► ITCH parser ──► [SPSC ring] ──► L3 order book
  (binary, L3)      itch.hpp         spsc.hpp       book.hpp           engine.hpp: latency, fees,
                                                                       executable fills, FIFO queue
                                                                       position (ITCH only)
-                                                                           ▲            │
+                                                                          ▲            │
 Coinbase level2 ─► Python loader ── pybind11 ─► L2 book                   │            ▼
  (JSONL, own       gap detection     _core                          ModelStrategy   trades,
   recordings)      over all channels                                (infer.hpp)     markouts
