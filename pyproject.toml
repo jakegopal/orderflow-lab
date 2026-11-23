@@ -8,6 +8,7 @@ build-backend = "scikit_build_core.build"
 name = "orderflow-lab"
 version = "0.1.0"
 description = "Order-book microstructure signal and event-driven backtester"
+license = "MIT"
 requires-python = ">=3.14"
 dependencies = [
     "numpy>=1.26",
